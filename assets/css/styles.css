@@ -1,0 +1,37 @@
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 500px;
+  scroll-behavior: smooth;
+}
+header {
+  padding-top: 80px;
+  height:100px
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+  background-color: aqua;
+
+  position: fixed;
+}
+nav h1 {
+  margin: 10px;
+}
+header nav ul {
+}
+nav ul a {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+}
+
+#aboutMe {
+  padding-top: 100px;
+  height: 400px;
+}
+#work{
+   height: 500px;
+   
+}
