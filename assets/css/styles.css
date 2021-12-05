@@ -30,6 +30,7 @@ nav h1 {
 nav ul {
   margin-right: 60px;
   display: flex;
+  flex-wrap: wrap; 
   align-items: center;
 }
 nav ul a {
@@ -68,10 +69,13 @@ color: #777777
 #top h2{
     margin: auto auto;
 }
+.sec{
+    display: flex;
+    flex-wrap: wrap;
+}
 #aboutMe {
   margin-top: 100px;
   display: flex;
-    background-color: #777777;
     padding:10px
 }
 
@@ -90,15 +94,16 @@ color: #777777
 
 /* Media Queries */
 
-@media screen and (max-width: 550px) {
+/* Mobile layout */
+@media screen and (max-width: 425px) {
     header{
         text-align: center;
     }
-  nav ul {
-    flex-wrap: wrap;   
+  nav ul {  
      padding:0px;
-     margin: 0;
+     margin: 0 auto;
      justify-content: center;
+     
     }
  nav ul a {
   
@@ -115,7 +120,16 @@ color: #777777
       text-align: center;
   }
   #myPhoto{
-      margin: 0px;
+      margin: 0 auto;
+      max-width: 320px;
   }
+  .tab {
+    border-right: none;
+    border-bottom: 5px solid black;
+    width: 80%;
+    padding-left: 10px;
+    
+  }
+  
 
 }
