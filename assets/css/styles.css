@@ -1,6 +1,6 @@
-:root{
-    --light-grey: 50 52 60;
-    --light-blue: 159 202 205;
+:root {
+  --light-grey: 50 52 60;
+  --light-blue: 159 202 205;
 }
 /* Element Selectors */
 html {
@@ -16,7 +16,7 @@ header {
 nav {
   display: flex;
   flex-wrap: wrap;
-  
+
   background-color: rgb(var(--light-grey));
   justify-content: space-between;
 }
@@ -30,7 +30,7 @@ nav h1 {
 nav ul {
   margin-right: 60px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   align-items: center;
 }
 nav ul a {
@@ -50,162 +50,199 @@ nav ul a:hover {
 /* Top Info */
 #top {
   display: flex;
-  margin:10px 0px;
+
   padding: 20px;
   justify-content: space-between;
-
+  background-image: url(../imgs/bckgroundImg.png);
 }
-#top h2{
-    margin: auto auto;
-    color: rgb(var(--light-grey));
-    background-color: rgb(var(--light-blue));
+#top h2 {
+  margin: auto;
+  color: rgb(var(--light-grey));
+  background-color: rgb(var(--light-blue));
+  padding: 10px;
 }
 #myPhoto {
-  margin:0 auto;
+  margin: 0 auto;
   max-width: 400px;
-  
+  padding: 10px;
 }
 .tab {
+  color: rgb(var(--light-blue));
   border-right: 5px solid rgb(var(--light-blue));
   padding-right: 20px;
   width: 150px;
   text-align: end;
   margin-left: 20px;
+  min-height: 125px;
 }
 
 /* About Me Section */
 
-.sec{
-    display: flex;
+.sec {
+  display: flex;
 }
 #aboutMe {
   margin-top: 100px;
-  padding:10px
+  padding: 10px;
 }
 
 #aboutInfo {
-    font-size: 18px;
-width:80%;
-padding-left: 20px;
+  font-size: 18px;
+  width: 80%;
+  padding: 20px;
+  color: rgb(var(--light-grey));
+  margin: 0 auto;
 }
 /* Projects Sections */
 #work {
-    padding:10px
+  margin: 20px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 33%;
 }
-#contact{
-    padding:10px;
+.proj {
+  border: 5px solid rgb(var(--light-blue));
+  position: relative;
+  margin: 10px;
+}
+.projPic {
+  min-width: 270px;
+  min-height: 200px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+#proj1 {
+  background-image: url("../imgs/my-resume.png");
+}
+
+#proj2 {
+  background-image: url("../imgs/horiseonfullPic.png");
+}
+#proj4{}
+#proj5{}
+.proj a {
+  color: rgb(var(--light-grey));
+  background-color: rgb(var(--light-blue));
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 /* Contct Me Section */
-#contact #way-to-contact{
-    display: flex;
-    margin: 20px;
-       
+#contact {
+  padding: 10px;
 }
-#way-to-contact h2{
-    margin: auto 0;
-    padding-right: 10px;
-    font-size: 25px;
-    color:rgb(var(--light-grey))
-}
-#way-to-contact a{
-    font-size: 25px;
-    font-weight: bold;
-    padding-right: 10px;
-    margin: auto 0;
-    color:rgb(var(--light-grey))
+#contact #way-to-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto 20px;
+  width: 80%;
 }
 
+#way-to-contact a {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  margin: auto 0;
+  color: rgb(var(--light-grey));
+  text-decoration: none;
+  border-bottom: 5px solid rgb(var(--light-grey));
+  width: fit-content;
+}
 
 /* Media Queries */
 
 /* Mobile layout L-S */
 @media screen and (max-width: 425px) {
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
-    header{
-        text-align: center;
-    }
-  nav ul {  
-     padding:0px;
-     justify-content: center;
-     margin: 0 auto;
-     
-    }
- nav ul a {
-  
-}
-  nav h1 {
-    padding: 5px;
-    width:100%;
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  header {
     text-align: center;
   }
-  .sec{
-      flex-wrap: wrap;
-      padding: 0px;
-      margin: 0px;
+  nav ul {
+    padding: 0px;
+    justify-content: center;
+    margin: 0 auto;
   }
-  #top{
-      flex-direction: column;
-      justify-content: center;
-      padding: 0px;
-      text-align: center;
+
+  nav h1 {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
   }
-  #myPhoto{
-      margin: 0 auto;
-      max-width: 270px;
+  .sec {
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
   }
-  #top h2{
-      
-      padding: 10px 0px;
+  #top {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    text-align: center;
+  }
+  #myPhoto {
+    margin: 0 auto;
+    max-width: 270px;
+  }
+  #top h2 {
+    padding: 10px 0px;
   }
   /* changes border to bottom */
   .tab {
     border-right: none;
     border-bottom: 5px solid rgb(var(--light-blue));
-    width: 80%;
+    width: 85%;
     padding-left: 10px;
     margin-left: 10px;
     text-align: left;
-    color: rgb(var(--light-blue));
-    
+    min-height: 10px;
   }
-  #aboutMe{
-      padding: 0px;
-  }
-  #aboutMe{
-      padding: 0px;
-  }
-  #aboutInfo{
-    margin-left: 20px;  
-    padding-left:0px
-  }
-#contact{
+  #aboutMe {
+    width: 99%;
     padding: 0px;
-}
-/* Contact Me Section */
-#contact #way-to-contact{
+  }
+  #aboutInfo {
+    margin: 0 auto;
+    padding: 0px;
+  }
+  #contact {
+    padding: 0px;
+  }
+  /* Contact Me Section */
+  #contact #way-to-contact {
     flex-direction: column;
-   margin: 0px 0px 0px 20px;
-    
-}
-#contact div h2{
+    margin: 0px 0px 0px 20px;
+  }
+  #contact div h2 {
     padding: 0px 0px 10px 0px;
     font-size: 20px;
-    
-}
+  }
 
+  #way-to-contact a {
+    padding: 15px;
+    font-size: 18px;
 
-#way-to-contact a{
-padding:10px 0px;
-font-size: 20px;
-}
+    margin-bottom: 10px;
+    border-bottom: 3px solid rgb(var(--light-grey));
+    width: fit-content;
+  }
+  .proj{
+      margin: 10px auto;
+  }
 
-#work{
-padding: 0px;
-}
-  
-
+  #work {
+    padding: 0px;
+  }
 }
