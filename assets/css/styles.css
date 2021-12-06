@@ -12,7 +12,7 @@ html {
 header {
   text-align: end;
 }
-
+/* Nav Styles */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -47,13 +47,26 @@ nav ul a:hover {
   color: rgb(var(--light-grey));
   border-bottom: 5px solid rgb(var(--light-grey));
 }
-#myPhoto {
+/* Top Info */
+#top {
+  display: flex;
+  margin:10px 0px;
+  padding: 20px;
+  justify-content: space-between;
 
+}
+#top h2{
+    margin: auto auto;
+    color: rgb(var(--light-grey));
+    background-color: rgb(var(--light-blue));
+}
+#myPhoto {
+  margin:0 auto;
   max-width: 400px;
-  margin-left: 100px;
+  
 }
 .tab {
-  border-right: 5px solid black;
+  border-right: 5px solid rgb(var(--light-blue));
   padding-right: 20px;
   width: 150px;
   text-align: end;
@@ -61,16 +74,7 @@ nav ul a:hover {
 }
 
 /* About Me Section */
-#top {
-  display: flex;
-  margin-top: 15px;
-  padding: 20px;
-  justify-content: center;
-color: #777777
-}
-#top h2{
-    margin: auto auto;
-}
+
 .sec{
     display: flex;
 }
@@ -99,13 +103,28 @@ padding-left: 20px;
        
 }
 #way-to-contact h2{
+    margin: auto 0;
     padding-right: 10px;
+    font-size: 25px;
+    color:rgb(var(--light-grey))
 }
+#way-to-contact a{
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 10px;
+    margin: auto 0;
+    color:rgb(var(--light-grey))
+}
+
 
 /* Media Queries */
 
 /* Mobile layout L-S */
 @media screen and (max-width: 425px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
     header{
         text-align: center;
     }
@@ -126,6 +145,7 @@ padding-left: 20px;
   .sec{
       flex-wrap: wrap;
       padding: 0px;
+      margin: 0px;
   }
   #top{
       flex-direction: column;
@@ -135,25 +155,32 @@ padding-left: 20px;
   }
   #myPhoto{
       margin: 0 auto;
-      max-width: 300px;
+      max-width: 270px;
   }
   #top h2{
-      max-width: 80%;
-      padding: 20px 0px;
+      
+      padding: 10px 0px;
   }
   /* changes border to bottom */
   .tab {
     border-right: none;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(var(--light-blue));
     width: 80%;
     padding-left: 10px;
     margin-left: 10px;
     text-align: left;
+    color: rgb(var(--light-blue));
     
   }
+  #aboutMe{
+      padding: 0px;
+  }
+  #aboutMe{
+      padding: 0px;
+  }
   #aboutInfo{
-      margin-left: 20px;
-      padding-left:0px
+    margin-left: 20px;  
+    padding-left:0px
   }
 #contact{
     padding: 0px;
@@ -165,9 +192,19 @@ padding-left: 20px;
     
 }
 #contact div h2{
-    padding: 0px;
+    padding: 0px 0px 10px 0px;
     font-size: 20px;
     
+}
+
+
+#way-to-contact a{
+padding:10px 0px;
+font-size: 20px;
+}
+
+#work{
+padding: 0px;
 }
   
 
