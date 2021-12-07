@@ -125,12 +125,6 @@ nav ul a:hover {
   padding: 5px;
 }
 
-.proj:hover a, .first:hover a {
-  border: 5px solid rgb(var(--light-grey));
- color: rgb(var(--light-blue));
- background-color: rgb(var(--light-grey));
-}
-
 .projPic {
     width: 450px;
     height:300px;
@@ -142,18 +136,11 @@ nav ul a:hover {
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
-.projPic:hover  {
-
-     /* remove blur effect */
-  filter: none;
-  -webkit-filter: none;
-}
 
 #proj1 {
   background-image: url("../imgs/my-resume.png");
   width: 100%;
 }
-
 #proj2 {
   background-image: url("../imgs/horiseonfullPic.png");
 }
@@ -165,6 +152,17 @@ nav ul a:hover {
 }
 #proj5 {
     background-image: url("../imgs/nature-background.jpg");
+}
+/* project hover events */
+.proj:hover a, .first:hover a {
+  border: 5px solid rgb(var(--light-grey));
+ color: rgb(var(--light-blue));
+ background-color: rgb(var(--light-grey));
+}
+.projPic:hover  {
+     /* remove blur effect */
+  filter: none;
+  -webkit-filter: none;
 }
 
 /* Contct Me Section */
