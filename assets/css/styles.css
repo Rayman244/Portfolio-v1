@@ -112,6 +112,9 @@ nav ul a:hover {
   position: relative;
   margin: 10px;
 }
+.proj:hover{
+    border: 5px solid rgb(var(--light-grey));
+}
 .proj a , .first a {
   color: rgb(var(--light-grey));
   background-color: rgb(var(--light-blue));
@@ -154,9 +157,14 @@ nav ul a:hover {
 #proj2 {
   background-image: url("../imgs/horiseonfullPic.png");
 }
+#proj3{
+    background-image: url("../imgs/natural-wooden-background.jpg");
+}
 #proj4 {
+    background-image: url("../imgs/ocean-photo.jpg");
 }
 #proj5 {
+    background-image: url("../imgs/nature-background.jpg");
 }
 
 /* Contct Me Section */
@@ -264,7 +272,7 @@ nav ul a:hover {
   .proj {
     margin: 10px auto;
   }
-  .projPic{
+  .projPic , .first{
       width:300px;
       height: 300px
   }

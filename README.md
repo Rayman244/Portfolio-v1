@@ -3,27 +3,29 @@
 
 ## Description
 
-This is a portfolio I have built in order to try to get a job. I have built this to leverage the flex and flexbox properties to make. my portfolio dynamic. Great to see on any device!
-
-## Table of Contents (Optional)
-If your README is long, add a table of contents to make it easy for users to find what they need.
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+This is a portfolio I have built in order to try to get a job. I have built this to leverage the flex and flexbox properties in combination with media queries to make my portfolio dynamic. So it will be great to see on any device!
 
 ## Installation
- No Installation nessasary go to 
+ No Installation nessasary go to https://rayman244.github.io/Portfolio-v1/
+
 ## Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![Full site](assets/imgs/fullImg.png)
+![Full site](assets/imgs/mobileImg.png)
+
 ## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well.
+![Ocean Photo](assets/imgs/ocean-photo.jpg)
+Photo by Anastasia Taioglou on 
+  https://unsplash.com/@thenata?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+  https://unsplash.com/wallpapers/nature/ocean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+![Wood Photo](assets/imgs/natural-wooden-background.jpg)
+  Background photo created by kbza - www.freepik.com</a>
+  https://www.freepik.com/photos/background
+
+![nature Photo](assets/imgs/nature-background.jpg)
+  Background vector created by freepik - www.freepik.com
+  https://www.freepik.com/vectors/background
+
 ## License
 MIT License
 
@@ -47,13 +49,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ---
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+
 ## Badges
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+
 ## Features
-If your project has a lot of features, list them here.
+Links to my projects as well as ways to contact
+
 ## How to Contribute
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+Leave a comment in my github or report an issue on the repository
+
 ## Tests
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+No errors found
