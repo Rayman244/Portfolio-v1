@@ -80,6 +80,7 @@ nav ul a:hover {
 
 .sec {
   display: flex;
+  padding: 10px;
 }
 #aboutMe {
   margin-top: 100px;
@@ -100,23 +101,38 @@ nav ul a:hover {
   display: flex;
   flex-wrap: wrap;
   flex: 3 4 33%;
-  
+  justify-content: space-around;
 }
-.proj {
+.first{
+    width:1000px
+}
+
+.proj , .first {
   border: 5px solid rgb(var(--light-blue));
   position: relative;
   margin: 10px;
 }
-.proj:hover a{
+.proj a , .first a {
+  color: rgb(var(--light-grey));
+  background-color: rgb(var(--light-blue));
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.proj:hover a, .first:hover a {
   border: 5px solid rgb(var(--light-grey));
  color: rgb(var(--light-blue));
  background-color: rgb(var(--light-grey));
 }
+
 .projPic {
-  min-width: 270px;
-  min-height: 200px;
-  
-  background-position: center;
+    width: 450px;
+    height:300px;
+  /* min-width: 270px;
+  min-height: 200px; */
   background-repeat: no-repeat;
   background-size: cover;
   /* Add the blur effect */
@@ -124,17 +140,15 @@ nav ul a:hover {
   -webkit-filter: blur(8px);
 }
 .projPic:hover  {
+
      /* remove blur effect */
   filter: none;
   -webkit-filter: none;
 }
-.proj a:hover{
-    background-color: rgb(var(--light-grey));
-    color:rgb(var(--light-blue))
-}
 
 #proj1 {
   background-image: url("../imgs/my-resume.png");
+  width: 100%;
 }
 
 #proj2 {
@@ -144,15 +158,6 @@ nav ul a:hover {
 }
 #proj5 {
 }
-.proj a {
-  color: rgb(var(--light-grey));
-  background-color: rgb(var(--light-blue));
-  position: absolute;
-  bottom: 20px;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px;
-}
 
 /* Contct Me Section */
 #contact {
@@ -161,7 +166,7 @@ nav ul a:hover {
 #contact #way-to-contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto 20px;
   width: 80%;
 }
@@ -258,6 +263,10 @@ nav ul a:hover {
   }
   .proj {
     margin: 10px auto;
+  }
+  .projPic{
+      width:300px;
+      height: 300px
   }
 
   #work {
