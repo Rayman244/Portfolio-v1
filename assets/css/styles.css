@@ -104,9 +104,11 @@ nav ul a:hover {
   justify-content: space-around;
 }
 .first{
-    width:1000px
+    width:90%
 }
-
+/* .proj{
+  width: 80%;
+} */
 .proj , .first {
   border: 5px solid rgb(var(--light-blue));
   position: relative;
@@ -143,15 +145,19 @@ nav ul a:hover {
 }
 #proj2 {
   background-image: url("../imgs/horiseonfullPic.png");
+  
 }
 #proj3{
     background-image: url("../imgs/natural-wooden-background.jpg");
+   
 }
 #proj4 {
     background-image: url("../imgs/ocean-photo.jpg");
+    
 }
 #proj5 {
     background-image: url("../imgs/nature-background.jpg");
+    
 }
 /* project hover events */
 .proj:hover a, .first:hover a {
@@ -189,7 +195,30 @@ nav ul a:hover {
 }
 
 /* Media Queries */
+/* 768 */
+@media screen and (max-width:768px) {
+  .proj{
+    width:80%
+  }
 
+
+#proj2 {
+  background-image: url("../imgs/horiseonfullPic.png");
+  width: 100%;
+}
+#proj3{
+    background-image: url("../imgs/natural-wooden-background.jpg");
+    width: 100%;
+}
+#proj4 {
+    background-image: url("../imgs/ocean-photo.jpg");
+    width: 100%;
+}
+#proj5 {
+    background-image: url("../imgs/nature-background.jpg");
+    width: 100%;
+}
+}
 /* Mobile layout L-S */
 @media screen and (max-width: 425px) {
   * {
