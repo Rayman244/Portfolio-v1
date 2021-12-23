@@ -8,115 +8,92 @@ html {
   scroll-behavior: smooth;
   background-color: var(--dark-grey);
 }
-
-header {
-  text-align: end;
+.navbar{
+  background-color:rgb(var(--light-grey));
 }
-/* Nav Styles */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-
-  background-color: rgb(var(--light-grey));
-  justify-content: space-between;
-}
-nav h1 {
-  margin: auto 0;
-  font-size: 35px;
-  background-color: rgb(var(--light-blue));
-  color: rgb(var(--light-grey));
-  padding: 5px 5px 5px 80px;
-}
-nav ul {
-  margin-right: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-nav ul a {
+.navbar button, .navbar a{
   color: rgb(var(--light-blue));
-  text-decoration: none;
-  margin: 5px;
-  text-align: center;
-  border-bottom: 5px solid rgb(var(--light-blue));
-  font-size: large;
-  padding: 5px;
 }
-nav ul a:hover {
-  background-color: rgb(var(--light-blue));
-  color: rgb(var(--light-grey));
-  border-bottom: 5px solid rgb(var(--light-grey));
+.customToggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(159 202 205)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.customToggler.navbar-toggler {
+  border-color: rgb(var(--light-blue));
+
 }
 /* Top Info */
 #top {
-  display: flex;
-
-  padding: 20px;
-  justify-content: space-between;
   background-image: url(../imgs/bckgroundImg.png);
 }
 #top h2 {
-  margin: auto;
+  
   color: rgb(var(--light-grey));
   background-color: rgb(var(--light-blue));
-  padding: 10px;
 }
 #myPhoto {
-  margin: 0 auto;
   max-width: 400px;
-  padding: 10px;
 }
 .tab {
   color: rgb(var(--light-blue));
   border-right: 5px solid rgb(var(--light-blue));
-  padding-right: 20px;
-  width: 150px;
-  text-align: end;
-  margin-left: 20px;
-  min-height: 125px;
+  text-align: center;
+  
 }
 
 /* About Me Section */
 
-.sec {
-  display: flex;
-  padding: 10px;
-}
-#aboutMe {
-  margin-top: 100px;
-  padding: 10px;
-}
+
 
 #aboutInfo {
   font-size: 18px;
-  width: 80%;
-  padding: 20px;
   color: rgb(var(--light-grey));
-  margin: 0 auto;
 }
 /* Projects Sections */
 #work {
-  margin: 20px auto;
-  width: 70%;
+  
+  
   display: flex;
   flex-wrap: wrap;
-  flex: 3 4 33%;
+  
   justify-content: space-around;
 }
-.first{
-    width:90%
+.card{
+margin: auto;
+  background-color: rgb(var(--light-grey));
+  border: 5px solid rgb(var(--light-blue));
+  color:rgb(var(--light-blue));
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
-/* .proj{
-  width: 80%;
-} */
+.card:hover{
+    
+    filter: none;
+    -webkit-filter: none;
+  
+}
+.card-img-top{
+ height: 300px;
+ object-fit: cover;
+
+
+}
+.btn{
+  border-color: rgb(var(--light-grey));
+  background-color: rgb(var(--light-blue));
+  color:rgb(var(--light-grey))
+}
+.btn:hover{
+  background-color: rgb(var(--light-grey));
+  color: rgb(var(--light-blue));
+  border-color: rgb(var(--light-blue));
+}
 .proj , .first {
   border: 5px solid rgb(var(--light-blue));
   position: relative;
   margin: 10px;
 }
-.proj:hover{
-    border: 5px solid rgb(var(--light-grey));
-}
+
 .proj a , .first a {
   color: rgb(var(--light-grey));
   background-color: rgb(var(--light-blue));
@@ -127,38 +104,6 @@ nav ul a:hover {
   padding: 5px;
 }
 
-.projPic {
-    width: 450px;
-    height:300px;
-  /* min-width: 270px;
-  min-height: 200px; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
-
-#proj1 {
-  background-image: url("../imgs/my-resume.png");
-  width: 100%;
-}
-#proj2 {
-  background-image: url("../imgs/horiseonfullPic.png");
-  
-}
-#proj3{
-    background-image: url("../imgs/natural-wooden-background.jpg");
-   
-}
-#proj4 {
-    background-image: url("../imgs/ocean-photo.jpg");
-    
-}
-#proj5 {
-    background-image: url("../imgs/nature-background.jpg");
-    
-}
 /* project hover events */
 .proj:hover a, .first:hover a {
   border: 5px solid rgb(var(--light-grey));
@@ -176,135 +121,41 @@ nav ul a:hover {
   padding: 10px;
 }
 #contact #way-to-contact {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   margin: auto 20px;
   width: 80%;
 }
 
 #way-to-contact a {
-  font-size: 25px;
-  font-weight: bold;
-  padding: 20px;
-  margin: auto 0;
   color: rgb(var(--light-grey));
   text-decoration: none;
   border-bottom: 5px solid rgb(var(--light-grey));
-  width: fit-content;
+  
 }
 
-/* Media Queries */
-/* 768 */
-@media screen and (max-width:768px) {
-  .proj{
-    width:80%
-  }
-
-
-#proj2 {
-  background-image: url("../imgs/horiseonfullPic.png");
-  width: 100%;
-}
-#proj3{
-    background-image: url("../imgs/natural-wooden-background.jpg");
-    width: 100%;
-}
-#proj4 {
-    background-image: url("../imgs/ocean-photo.jpg");
-    width: 100%;
-}
-#proj5 {
-    background-image: url("../imgs/nature-background.jpg");
-    width: 100%;
-}
-}
 /* Mobile layout L-S */
 @media screen and (max-width: 425px) {
-  * {
-    padding: 0px;
-    margin: 0px;
-  }
-  header {
-    text-align: center;
-  }
-  nav ul {
-    padding: 0px;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  nav h1 {
-    padding: 5px;
-    width: 100%;
-    text-align: center;
-  }
-  .sec {
-    flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px;
-  }
-  #top {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px;
-    text-align: center;
-  }
+  
   #myPhoto {
-    margin: 0 auto;
-    max-width: 270px;
+    max-width: 250px;
   }
-  #top h2 {
-    padding: 10px 0px;
-  }
+ 
   /* changes border to bottom */
   .tab {
     border-right: none;
     border-bottom: 5px solid rgb(var(--light-blue));
-    width: 85%;
-    padding-left: 10px;
-    margin-left: 10px;
-    text-align: left;
-    min-height: 10px;
+  
   }
-  #aboutMe {
-    width: 99%;
-    padding: 0px;
-  }
-  #aboutInfo {
-    margin: 0 auto;
-    padding: 0px;
-  }
-  #contact {
-    padding: 0px;
-  }
+  
+
   /* Contact Me Section */
   #contact #way-to-contact {
     flex-direction: column;
-    margin: 0px 0px 0px 20px;
   }
-  #contact div h2 {
-    padding: 0px 0px 10px 0px;
-    font-size: 20px;
-  }
+ 
 
-  #way-to-contact a {
-    padding: 15px;
-    font-size: 18px;
-
-    margin-bottom: 10px;
-    border-bottom: 3px solid rgb(var(--light-grey));
+  #way-to-contact a {  
     width: fit-content;
   }
-  .proj {
-    margin: 10px auto;
-  }
-  .projPic , .first{
-      width:300px;
-      height: 300px
-  }
-
-  #work {
-    padding: 0px;
-  }
+ 
 }
